@@ -1,8 +1,8 @@
 # Contributors
 
-1)Sparsh Tandon    (LIT2021011) <br/><br/>
+1)Sparsh Tandon    (LIT2021011) (https://github.com/intSpartan13) <br/><br/>
 2)Abhishek Pandey  (LIT2021004) ( https://github.com/notabhishek22 ) <br/><br/>
-3)Shashank Karoria (LIT2021050) <br/><br/>
+3)Shashank Karoria (LIT2021050) (https://github.com/ShashankNotShashank) <br/><br/>
 4)Akshat Jaiswal   (LIT2021033) ( https://github.com/axshatj ) <br/><br/>
 
 # Introduction
