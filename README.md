@@ -1,19 +1,19 @@
 # Contributors
 
-1)Sparsh Tandon    (LIT2021011) 
-2)Abhishek Pandey  (LIT2021004) ( https://github.com/notabhishek22 )
-3)Shashank Karoria (LIT2021050)
-4)Akshat Jaiswal   (LIT2021033) ( https://github.com/axshatj )
+1)Sparsh Tandon    (LIT2021011) <br/>
+2)Abhishek Pandey  (LIT2021004) ( https://github.com/notabhishek22 ) <br/>
+3)Shashank Karoria (LIT2021050) <br/>
+4)Akshat Jaiswal   (LIT2021033) ( https://github.com/axshatj ) <br/>
 
 # Introduction
 
-This is our CTP mini Project. We made a C program that finds you the perfect model for variety of products in your budget range.
-Information of following products are listed in this program
-1)Car
-2)Mobile
-3)Laptop
-4)T.V
-5)Fridge
+This is our CTP mini Project. We made a C program that finds you the perfect model for variety of products in your budget range. <br/>
+Information of following products are listed in this program   <br/>
+1)Car <br/>
+2)Mobile <br/>
+3)Laptop <br/>
+4)T.V <br/>
+5)Fridge <br/>
 
 # Requirements
 
