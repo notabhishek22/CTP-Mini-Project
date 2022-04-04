@@ -1,23 +1,54 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+// int max(int a, int b)
+// {
+//     if (a > b)
+//         return a;
+//     else
+//         return b;
+// }
+
+// int toCheck(char str[], char car[], int n)
+// {
+//     int count = 0;
+//     bool b = true;
+//     for (int i = 0; i < 10; i++)
+//     {
+//         if (str[i] == car[i])
+//         {
+//             count++;
+//             continue;
+//         }
+//         else
+//         {
+//             b = false;
+//             return 0;
+//         }
+//     }
+//     if (b == true)
+//         return 1;
+// }
 
 int main()
 {
-    char mobile[] = "Mobile\t"; // done
-    printf("%s", mobile);
-    char car[] = "Car\t"; // done
-    printf("%s", car);
-    char tv[] = "Television\t"; // done
-    printf("%s", tv);
-    char laptop[] = "Laptop\t"; // done
-    printf("%s", laptop);
-    char fridge[] = "Fridge\t"; // done
-    printf("%s", fridge);
-    char ac[] = "A.C\n"; // done
-    printf("%s", ac);
+    char mobile[] = "Mobile"; // done
+    printf("%s\t", mobile);
+    char car[] = "Car"; // done
+    printf("%s\t", car);
+    char tv[] = "Television"; // done
+    printf("%s\t", tv);
+    char laptop[] = "Laptop"; // done
+    printf("%s\t", laptop);
+    char fridge[] = "Fridge"; // done
+    printf("%s\t", fridge);
+    char ac[] = "A.C"; // done
+    printf("%s\n", ac);
     printf("Enter the products about which you want to know from above list : \n");
-    char string[10];
-    scanf("%s", string);
-    if (*string == *mobile) //               MOBILE
+    char str[10];
+    scanf("%s", str);
+    if (strnicmp(str, mobile, strlen(mobile)) == 0) //               MOBILE
     {
         int price[10];
         for (int i = 0; i < 6; i++)
@@ -55,6 +86,8 @@ int main()
                     printf("%s\t\t", srr[i]);
                     printf("Price : %d \n", price[i]);
                 }
+                else
+                    break;
             }
         }
         else
@@ -72,11 +105,11 @@ int main()
             {
                 rembal = accbalance - price[i];
                 printf("You will have %d money left in your account \n", rembal);
-                printf("Do you want to place the order ? ");
+                printf("Do you want to place the order (YES/NO) ? ");
                 char st[3];
                 scanf("%s", &st);
                 char yes[] = "YES";
-                if (*st == *yes)
+                if (strnicmp(st, yes, strlen(yes)) == 0)
                 {
                     printf("Order placed");
                 }
@@ -88,7 +121,7 @@ int main()
             }
         }
     }
-    else if (*string == *tv) //       TV
+    else if (strnicmp(str, tv, strlen(tv)) == 0) //       TV
     {
         int price[10];
         for (int i = 0; i < 6; i++)
@@ -145,11 +178,11 @@ int main()
             {
                 rembal = accbalance - price[i];
                 printf("You will have %d money left in your account \n", rembal);
-                printf("Do you want to place the order ? ");
+                printf("Do you want to place the order (YES/NO) ? ");
                 char st[3];
                 scanf("%s", &st);
                 char yes[] = "YES";
-                if (*st == *yes)
+                if (strnicmp(st, yes, strlen(yes)) == 0)
                 {
                     printf("Order placed");
                 }
@@ -161,7 +194,7 @@ int main()
             }
         }
     }
-    else if (*string == *car) //         CAR
+    else if (strnicmp(str, car, strlen(car)) == 0) //         CAR
     {
         int price[10];
         for (int i = 0; i < 6; i++)
@@ -216,11 +249,11 @@ int main()
             {
                 rembal = accbalance - price[i];
                 printf("You will have %d money left in your account \n", rembal);
-                printf("Do you want to place the order ? ");
+                printf("Do you want to place the order (YES/NO) ? ");
                 char st[3];
                 scanf("%s", &st);
                 char yes[] = "YES";
-                if (*st == *yes)
+                if (strnicmp(st, yes, strlen(yes)) == 0)
                 {
                     printf("Order placed");
                 }
@@ -232,7 +265,7 @@ int main()
             }
         }
     }
-    else if (*string == *laptop) //         LAPTOP
+    else if (strnicmp(str, laptop, strlen(laptop)) == 0) //         LAPTOP
     {
         int price[10];
         for (int i = 0; i < 6; i++)
@@ -287,11 +320,11 @@ int main()
             {
                 rembal = accbalance - price[i];
                 printf("You will have %d money left in your account \n", rembal);
-                printf("Do you want to place the order ? ");
+                printf("Do you want to place the order (YES/NO) ? ");
                 char st[3];
                 scanf("%s", &st);
                 char yes[] = "YES";
-                if (*st == *yes)
+                if (strnicmp(st, yes, strlen(yes)) == 0)
                 {
                     printf("Order placed");
                 }
@@ -303,7 +336,7 @@ int main()
             }
         }
     }
-    else if (*string == *ac) //          AC
+    else if (strnicmp(str, ac, strlen(ac)) == 0) //          AC
     {
         int price[10];
         for (int i = 0; i < 6; i++)
@@ -358,11 +391,11 @@ int main()
             {
                 rembal = accbalance - price[i];
                 printf("You will have %d money left in your account \n", rembal);
-                printf("Do you want to place the order ? ");
+                printf("Do you want to place the order (YES/NO) ? ");
                 char st[3];
                 scanf("%s", &st);
                 char yes[] = "YES";
-                if (*st == *yes)
+                if (strnicmp(st, yes, strlen(yes)) == 0)
                 {
                     printf("Order placed");
                 }
@@ -374,7 +407,7 @@ int main()
             }
         }
     }
-    else if (*string == *fridge) //      FRIDGE
+    else if (*str == *fridge) //      FRIDGE
     {
         int price[10];
         for (int i = 0; i < 6; i++)
@@ -429,11 +462,11 @@ int main()
             {
                 rembal = accbalance - price[i];
                 printf("You will have %d money left in your account \n", rembal);
-                printf("Do you want to place the order ? ");
+                printf("Do you want to place the order (YES/NO) ? ");
                 char st[3];
                 scanf("%s", &st);
                 char yes[] = "YES";
-                if (*st == *yes)
+                if (strnicmp(st, yes, strlen(yes)) == 0)
                 {
                     printf("Order placed");
                 }
